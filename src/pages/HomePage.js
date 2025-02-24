@@ -1,6 +1,7 @@
+import SubHeader from "../components/SubHeader";
 
 const HomePage = () => {
-    return(<div>Home Page</div>);
+    return(<div><SubHeader current="Home" /></div>);
 };
 
 export default HomePage;

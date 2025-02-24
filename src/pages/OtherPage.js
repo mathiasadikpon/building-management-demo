@@ -1,6 +1,7 @@
+import SubHeader from "../components/SubHeader";
 
 const OtherPage = () =>{
-    return(<div>Other Page</div>);
+    return(<div><SubHeader current="Other Page" /> </div>);
 };
 
 export default OtherPage;
