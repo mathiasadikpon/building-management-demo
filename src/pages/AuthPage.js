@@ -1,7 +1,7 @@
 import { useState } from "react";
-import { Input } from "@/components/ui/input";
-import { Button } from "@/components/ui/button";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+
+
+import {Button,Input, Card, CardBody, CardHeader, CardTitle, Container } from "reactstrap";
 import { Eye, EyeOff } from "lucide-react";
 
 export default function AuthPage() {
@@ -33,14 +33,14 @@ export default function AuthPage() {
   };
 
   return (
-    <div className="flex min-h-screen items-center justify-center bg-gray-100">
+    <Container className="flex min-h-screen items-center justify-center bg-gray-100">
       <Card className="w-full max-w-md p-6 shadow-lg">
         <CardHeader>
           <CardTitle className="text-center text-2xl font-semibold">
             {isSignUp ? "Create an Account" : "Sign In to Your Account"}
           </CardTitle>
         </CardHeader>
-        <CardContent>
+        <CardBody>
           <form onSubmit={handleSubmit} className="space-y-4">
             <Input
               type="email"
@@ -88,8 +88,8 @@ export default function AuthPage() {
               {isSignUp ? "Sign In" : "Sign Up"}
             </button>
           </p>
-        </CardContent>
+        </CardBody>
       </Card>
-    </div>
+    </Container>
   );
 }

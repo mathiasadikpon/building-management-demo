@@ -19,7 +19,7 @@ function App() {
         <Route path="/" element={<HomePage />} />
         <Route path="other" element={<OtherPage />} />
         <Route path="*" element={<ErrorPage />} />
-        <Route path="*" element={<AuthPage />} />
+        <Route path="auth" element={<AuthPage />} />
       </Routes>
     </div>
   );
