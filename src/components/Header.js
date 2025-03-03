@@ -16,7 +16,7 @@ const Header = () => {
 
   return (
     <Navbar dark color="primary" sticky="top" expand="md">
-      <NavbarBrand className="ms-1" href="/">
+      <NavbarBrand className="ms-5" href="/">
         <img src={hillmanLogo} alt="nucamp logo" className="float-start" /> 
         <h1 className="mt-1">Building Management</h1>
       </NavbarBrand>
