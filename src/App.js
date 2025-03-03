@@ -7,6 +7,7 @@ import HillmanPage from "./pages/HillmanPage";
 import OtherPage from "./pages/OtherPage";
 import ErrorPage from "./pages/ErrorPage";
 import Header from "./components/Header";
+import AuthPage from "./pages/AuthPage";
 
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
     <Route path="/" element={<HomePage />} />
     <Route path="other" element={<OtherPage />} />
     <Route path="*" element={<ErrorPage />} />
+    <Route path="*" element={<AuthPage />} />
     </Routes></div>;
 }
 
